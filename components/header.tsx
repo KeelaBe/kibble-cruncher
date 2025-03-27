@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import kibbleCruncherLogo from '../public/kc-logo.png'
 import menuClosed from '../public/menu-closed.svg'
 import menuOpen from '../public/menu-open.svg'
-import path from 'path';
 
 export default function Header() {
   const pathname = usePathname();
