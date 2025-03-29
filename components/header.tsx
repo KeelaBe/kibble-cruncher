@@ -20,12 +20,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-blue-400 w-full md:w-9/10 md:mt-8 justify-self-center md:rounded-lg shadow-md">
+    <header className="bg-blue-400 w-full md:my-8 justify-self-center md:rounded-lg shadow-xl">
       <div className="flex justify-between items-center py-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-800">
+          <Link href="/" className="text-2xl font-bold text-gray-700">
             <Image 
               src={kibbleCruncherLogo}
               alt="Kibble Cruncher Logo"
@@ -41,7 +41,7 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className={` hover:text-gray-800 px-3 py-2 rounded-md text-sm font-bold  ${pathname === item.href ? 'text-gray-800 underline underline-offset-4 decoration-3' : 'text-white'}`}
+              className={` hover:text-gray-700 px-3 py-2 rounded-md text-sm font-bold  ${pathname === item.href ? 'text-gray-700 underline underline-offset-4 decoration-3' : 'text-white'}`}
             >
               {item.label}
             </Link>
@@ -82,7 +82,7 @@ export default function Header() {
                 text-base 
                 font-bold 
                 text-right
-                ${pathname === item.href ? 'text-gray-800 underline underline-offset-4 decoration-3' : 'text-white'}
+                ${pathname === item.href ? 'text-gray-700 underline underline-offset-4 decoration-3' : 'text-white'}
                 `}
             >
               {item.label}
