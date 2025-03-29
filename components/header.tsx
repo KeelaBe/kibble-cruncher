@@ -21,19 +21,17 @@ export default function Header() {
 
   return (
     <header className="bg-blue-400 w-full md:my-8 justify-self-center md:rounded-lg shadow-xl">
-      <div className="flex justify-between items-center py-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between items-center py-4 px-6 lg:px-8">
 
         {/* Logo */}
-        <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-700">
-            <Image 
-              src={kibbleCruncherLogo}
-              alt="Kibble Cruncher Logo"
-              width={802/2}
-              height={176/2}
-            />
-          </Link>
-        </div>
+        <Link href="/" className="text-2xl font-bold text-gray-700">
+          <Image 
+            src={kibbleCruncherLogo}
+            alt="Kibble Cruncher Logo"
+            width={802/2}
+            height={176/2}
+          />
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-4">
